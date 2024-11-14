@@ -128,7 +128,6 @@
     iput-object v0, p0, Lcom/sec/internal/ims/imsservice/ImsServiceBase;->mBinder:Lcom/sec/ims/IImsService$Stub;
 
     .line 48
-    sget v0, Landroid/os/Build$VERSION;->SEM_INT:I
 
     const/16 v1, 0xa9c
 

@@ -2436,7 +2436,6 @@
     .line 637
     :cond_0
     :try_start_0
-    sget v0, Landroid/os/Build$VERSION;->SEM_INT:I
 
     const/16 v1, 0xa9c
 
