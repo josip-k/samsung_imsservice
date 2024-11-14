@@ -6935,7 +6935,11 @@
     move-result-object v0
 
     .line 1116
-    invoke-static {}, Landroid/os/SystemProperties;->getCountryIso()Ljava/lang/String;
+
+    const-string v0, "ro.csc.countryiso_code"
+    const-string v1, ""
+
+    invoke-static {v0, v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -7139,7 +7143,11 @@
     .locals 6
 
     .line 1215
-    invoke-static {}, Landroid/os/SystemProperties;->getCountryIso()Ljava/lang/String;
+
+const-string v0, "ro.csc.countryiso_code"
+const-string v1, ""
+
+invoke-static {v0, v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
