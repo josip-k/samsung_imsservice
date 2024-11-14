@@ -170,8 +170,6 @@
 
     const/4 v0, 0x1
 
-    sget-object v1, Landroid/os/UserHandle;->SEM_CURRENT:Landroid/os/UserHandle;
-
     invoke-virtual {p0, v0, v1}, Landroid/location/LocationManager;->setLocationEnabledForUser(ZLandroid/os/UserHandle;)V
 
     return-void
@@ -290,8 +288,6 @@
 
     .line 111
     iget-object v0, p0, Lcom/sec/internal/ims/entitlement/util/GeolocationUpdateFlow;->mLocationManager:Landroid/location/LocationManager;
-
-    sget-object v1, Landroid/os/UserHandle;->SEM_CURRENT:Landroid/os/UserHandle;
 
     invoke-virtual {v0, v1}, Landroid/location/LocationManager;->isLocationEnabledForUser(Landroid/os/UserHandle;)Z
 
@@ -449,8 +445,6 @@
     iget-object v0, p0, Lcom/sec/internal/ims/entitlement/util/GeolocationUpdateFlow;->mLocationManager:Landroid/location/LocationManager;
 
     iget-boolean p0, p0, Lcom/sec/internal/ims/entitlement/util/GeolocationUpdateFlow;->mUserLocationMode:Z
-
-    sget-object v1, Landroid/os/UserHandle;->SEM_CURRENT:Landroid/os/UserHandle;
 
     invoke-virtual {v0, p0, v1}, Landroid/location/LocationManager;->setLocationEnabledForUser(ZLandroid/os/UserHandle;)V
 
