@@ -1005,7 +1005,7 @@
     const-string/jumbo v0, "ro.build.PDA"
 
     .line 1550
-    invoke-static {v0}, Landroid/os/SemSystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v12
 
@@ -1279,14 +1279,14 @@
     move-result-object v4
 
     .line 1577
-    invoke-static {v10}, Landroid/os/SemSystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v10}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v10
 
     const-string/jumbo v12, "ril.official_cscver"
 
     .line 1578
-    invoke-static {v12}, Landroid/os/SemSystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v12}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v12
 
@@ -1406,7 +1406,7 @@
     move-result-object v4
 
     .line 1589
-    invoke-static {v10}, Landroid/os/SemSystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v10}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v10
 
@@ -1499,7 +1499,7 @@
     const-string/jumbo v4, "ro.product.base_model"
 
     .line 1603
-    invoke-static {v4}, Landroid/os/SemSystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -1544,7 +1544,7 @@
     :goto_9
     const-string/jumbo v8, "ril.PcModelName"
 
-    invoke-static {v8, v4}, Landroid/os/SemSystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v8, v4}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 

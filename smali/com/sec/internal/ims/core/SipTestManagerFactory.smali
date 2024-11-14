@@ -65,7 +65,7 @@
     const-string/jumbo v0, "persist.sip.test.enable"
 
     .line 20
-    invoke-static {v0, v2}, Landroid/os/SemSystemProperties;->getInt(Ljava/lang/String;I)I
+    invoke-static {v0, v2}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
 
     move-result v0
 
